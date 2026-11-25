@@ -3,6 +3,7 @@
 __pycache__/
 *.pyc
 .env
+.pytest_cache/
 
 # Project guide files (not part of the shared/graded code)
 CLAUDE.md

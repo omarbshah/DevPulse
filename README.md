@@ -31,6 +31,16 @@ Interactive API docs are at http://127.0.0.1:8000/docs.
 The frontend reads the API address from `VITE_API_URL` (default
 `http://localhost:8000`). Vite bakes it in at build time.
 
+## Tests
+
+`pip install -r requirements-dev.txt` then `pytest`.
+
+The suite covers the pure logic (streaks, topic merging, difficulty buckets,
+AtCoder rank colours, the cache) and the API (signup and login, linking and
+unlinking profiles, `/stats` with all four platforms). The platform calls are
+replaced with fakes and the tests use an in-memory SQLite database, so they
+need no network and never touch the real database.
+
 ## Environment variables
 
 | Variable | Required | Purpose |
