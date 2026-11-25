@@ -22,7 +22,7 @@ async function handleSubmit(e) {
   setError('')
 
   if (!email.trim() || !password) {
-    setError('Email aur password dono daalo')
+    setError('Please enter both email and password')
 
     return
   }

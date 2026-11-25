@@ -34,8 +34,8 @@ function GitHubStats() {
   if (!profile) {
     return (
       <p className="px-8 py-4">
-        GitHub abhi link nahi hai.{' '}
-        <Link to="/platform/connect" className="font-bold underline">Link karo</Link>
+        GitHub is not linked yet.{' '}
+        <Link to="/platform/connect" className="font-bold underline">Link it</Link>
       </p>
     )
   }
@@ -45,8 +45,8 @@ function GitHubStats() {
     return (
       <p className="px-8 py-4">
         {rateLimited
-          ? 'GitHub ne abhi limit laga di hai (rate limit). Thodi der baad dobara try karo.'
-          : `"${profile.handle}" ka data nahi mila. Handle galat ho sakta hai, ya GitHub abhi respond nahi kar raha.`}
+          ? 'GitHub is limiting requests right now (rate limit). Please try again in a little while.'
+          : `No data found for "${profile.handle}". The handle may be wrong, or GitHub is not responding right now.`}
       </p>
     )
   }

@@ -15,7 +15,6 @@ const platforms = [
   { key: 'leetcode', label: 'LeetCode', prefix: 'https://leetcode.com/u/', supported: true },
   { key: 'codeforces', label: 'CodeForces', prefix: 'https://codeforces.com/profile/', supported: true },
   { key: 'atcoder', label: 'AtCoder', prefix: 'https://atcoder.jp/users/', supported: true },
-  { key: 'geeksforgeeks', label: 'GeeksForGeeks', prefix: 'https://www.geeksforgeeks.org/user/', supported: false },
 ]
 
 function logoFor(key) {
@@ -50,7 +49,7 @@ function LinkPlatform() {
   async function handleSubmit(key) {
     const handle = (handles[key] ?? '').trim()
     if (!handle) {
-      setError('Handle daalo')
+      setError('Please enter a handle')
       return
     }
 
@@ -68,7 +67,7 @@ function LinkPlatform() {
   }
 
   async function handleDelete(profileId) {
-    if (!window.confirm('Ye profile hata dein?')) return
+    if (!window.confirm('Remove this profile?')) return
 
     try {
       setError('')

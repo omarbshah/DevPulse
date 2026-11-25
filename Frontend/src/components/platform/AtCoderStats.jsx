@@ -59,8 +59,8 @@ function AtCoderStats() {
   if (!profile) {
     return (
       <p className="px-8 py-4">
-        AtCoder abhi link nahi hai.{' '}
-        <Link to="/platform/connect" className="font-bold underline">Link karo</Link>
+        AtCoder is not linked yet.{' '}
+        <Link to="/platform/connect" className="font-bold underline">Link it</Link>
       </p>
     )
   }
@@ -68,7 +68,7 @@ function AtCoderStats() {
   if (!data) {
     return (
       <p className="px-8 py-4">
-        "{profile.handle}" ka data nahi mila. Handle galat ho sakta hai, ya AtCoder abhi respond nahi kar raha.
+        No data found for "{profile.handle}". The handle may be wrong, or AtCoder is not responding right now.
       </p>
     )
   }

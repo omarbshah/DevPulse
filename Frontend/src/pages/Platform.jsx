@@ -58,7 +58,7 @@ function Platform() {
   ) : (
     <div className="px-8 py-4">
       <h1 className="text-3xl font-bold capitalize">{name}</h1>
-      <p className="mt-2">Is platform ke stats yahan aayenge.</p>
+      <p className="mt-2">Coming soon.</p>
       </div>
 )}
 

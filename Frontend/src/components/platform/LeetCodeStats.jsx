@@ -36,8 +36,8 @@ function LeetCodeStats() {
   if (!profile) {
     return (
       <p className="px-8 py-4">
-        LeetCode abhi link nahi hai.{' '}
-        <Link to="/platform/connect" className="font-bold underline">Link karo</Link>
+        LeetCode is not linked yet.{' '}
+        <Link to="/platform/connect" className="font-bold underline">Link it</Link>
       </p>
     )
   }
@@ -45,7 +45,7 @@ function LeetCodeStats() {
   if (!data) {
     return (
       <p className="px-8 py-4">
-        "{profile.handle}" ka data nahi mila. Handle galat ho sakta hai, ya LeetCode abhi respond nahi kar raha.
+        No data found for "{profile.handle}". The handle may be wrong, or LeetCode is not responding right now.
       </p>
     )
   }

@@ -26,7 +26,7 @@ async function handleSubmit(e) {
   setError('')
 
   if (password !== confirm) {
-    setError('Passwords match nahi kar rahe')
+    setError('Passwords do not match')
     return
   }
 
